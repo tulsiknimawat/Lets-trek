@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta metaname="viewport" content="width=device-width,intial-scale=1,shrink-to-fit=no">
+
+        <link type="text/css" rel="stylesheet" href="font_awesome/css/all.css">
+    
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="s.css/3.signup.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" > 
+                                                    <!-- ye link bootstrap varsion-5 ke hai. -->
+
+        <script src="jquery.3.2.1.slim.js"></script>
+        
+        <script src="js/bootstrap.js"></script>
+
+        <script src="js/bootstrap.bundle.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- slider k liye ye like jaruri hai. -->
+
+    </head>
+  <body>
+        <!--1. Home -->
+        <div class="container-fluid ">
+          <div class="row" id="border">
+              <div class="col">
+
+                <!-- Navbar -->
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                      <div id="ico">
+                          <img src="photos/mountains.ico" height="50px"width="60px">
+                      </div>
+                      &nbsp;
+                      <div>
+                        <a class="navbar-brand mr-auto" href="#" id="logo">Let's Trek</a><br>
+                        <small>FIND YOUR WAY TO THE MOUNTAINS</small>
+                      </div>
+
+                        <!--Choose Trek Button -->
+                        <div class="d-flex ml-auto align-items-center gap-2">
+                          <div class="dropdown ">
+                            <button class="btn btn-success rounded-pill dropdown-toggle"  type="button" data-bs-toggle="dropdown">Choose Trek
+                              <ul class="dropdown-menu p-3 shadow-lg" style="width: 250px;">
+                                <li><a class="dropdown-item py-2" href="#">Kedarkantha Trek</a></li>
+                                <li><a class="dropdown-item py-2" href="#">Brahmatal Trek</a></li>
+                                <li><a class="dropdown-item py-2" href="#">Roopkund Trek</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger fw-bold" href="#">View All Treks</a></li>
+                              </ul>
+                            </button>
+                          </div>
+                        
+                      
+                          <!--Login Button -->
+                          <div class="login d-flex gap-2">
+                            <a href="2.Login.html"><button class="btn rounded-pill" type="button" id="login">Login</button></a>
+                          </div> 
+                        
+
+                      
+                          <!-- Hamburger Menu Button -->
+                          <button class="btn ml-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                      </div>
+                  </nav>
+      
+                   <!-- Right Side Sliding Menu -->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+                      <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="menu" class="m-0">Menu</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+
+                      <div class="offcanvas-body" id="menu">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="1.index.html" class="text-decoration-none text-dark">🖼️ HOME PAGE</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">🏔️ MY TREKS</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">📰 ARTICLE</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">📌 TREK UPDATES</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">🛍 SHOP</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">📞 CONTACT US</a></li>
+                            </ul>
+                      </div>
+                  </div>          
+             </div>
+           </div>
+       </div>
+          
+
+            
+
+
+
+        <!-- Signup Card -->
+         <div class="signup-card">
+            <div class="tab-header">
+                <a href="2.Login.html"><button class="tab-btn">Login</button></a>
+                <a href="3.signup.html"><button class="tab-btn active">Signup</button></a>
+            </div>
+
+            <h2 class="card-title">createb Your Account</h2>
+            <p class="title">(Name as par Aadhar Card)</p>
+
+            <from class="signup-form">
+
+                <div class="field-row">
+                    <div class="input-group">
+                        <input type="text" placeholder="First Name" required/>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" placeholder="Last Name" required/> 
+                    </div>
+                </div>
+
+
+                <label class="input-label">Phone Number</label>
+                <div id="phone">
+                    <div class="field-row phone-row">
+                        <div class="select-wrapper">
+                            <select class="countery-code" id="tel">
+                                <option value="+91">Indi (+91)</option>
+                                <option value="+1">USA (+1)</option>
+                                <option value="+44">UK (+44)</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="input-group">
+                        <input type="tel" placeholder="Phone" required/>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" placeholder="Email" required/>
+                </div>
+
+                <div class="input-group incon-inside">
+                    <input type="password" placeholder="Password" required/>
+                    <i class="fa fa-regular fa-eye toggle-password "></i>
+                </div>
+
+                
+                <div class="input-group incon-inside">
+                    <input type="password" placeholder="Confirm Password" required/>
+                    <i class="fa fa-regular fa-eye-slash toggle-password"></i>
+                </div>
+
+
+                <button type="button" class="btn-submit">Signup</button>
+
+                <div class="divider">
+                    <span>or</span>
+                </div>
+
+
+                 <!-- Alternative button -->
+                    <button type="button" class="btn-social">
+                         <i class="fa fa-soild fa-mobile-screen-button"></i>
+                            Continue with Mobile
+                    </button>
+                
+
+            </from>
+         </div>
+      
+      
+
+
+
+        
+
+</body>
+</html>
+
+
+                  
+               
+                  
+
+                    
+                    
+ 
